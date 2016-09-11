@@ -1,0 +1,21 @@
+# 表示作业的类型，自动填充，请勿修改
+[type]
+type = mapreduce
+
+# 作业执行信息
+[job_info]
+
+# 表示作业执行时使用的hadoop账号，请修改为本组的hadoop账号，否则会报错
+#usergroup = hadoop-rc
+usergroup = hadoop-mining
+
+# 作业对应的主类名
+class = com.meituan.sankuai.wordcount.wordcount.MainRun
+
+# 选择作业提交的队列
+#queue = root.hadoop-rc.query
+queue = root.hadoop-mining.ad-online
+
+# 作业参数，可以不填，在执行命令中指定
+[args]
+args =
